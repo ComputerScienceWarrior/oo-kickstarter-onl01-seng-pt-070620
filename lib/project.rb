@@ -14,7 +14,6 @@ class Project
     @backers << backer
     Backer.all.find do |back|
       if back.name == self.backers[0].name
-        # binding.pry
         back.backed_projects << self
       end
     end
