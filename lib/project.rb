@@ -12,11 +12,6 @@ class Project
   
   def add_backer(backer)
     @backers << backer
-    Backer.all.find do |back|
-      if back.title == self.backers[0].title
-        back.backed_projects << self
-      end
-    end
   end
   
   def self.all 
