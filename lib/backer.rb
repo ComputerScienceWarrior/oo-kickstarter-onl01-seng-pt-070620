@@ -14,7 +14,7 @@ class Backer
     # binding.pry
     @backed_projects << project 
     Project.all.find do |proj|
-      if 
+      if proj.title == 
     end
   end
   
