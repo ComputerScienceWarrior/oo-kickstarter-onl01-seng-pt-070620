@@ -15,7 +15,7 @@ class Project
     Backer.all.find do |back|
       if back.name == self.backers[0].name
         # binding.pry
-        back << self
+        back.back << self
       end
     end
   end
