@@ -11,7 +11,7 @@ class Backer
   end
   
   def back_project(project)
-    binding.pry
+    # binding.pry
     @backed_projects << project 
     Project.all.find {|proj| proj.title == self.title}
   end
