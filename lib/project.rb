@@ -14,7 +14,7 @@ class Project
     @backers << backer
     Backer.all.find do |back|
       if back.title == self.backers[0].title
-        back. << self
+        back.backed_projects << self
       end
     end
   end
