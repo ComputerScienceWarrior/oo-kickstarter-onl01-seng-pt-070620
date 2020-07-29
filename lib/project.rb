@@ -13,7 +13,7 @@ class Project
   def add_backer(backer)
     @backers << backer
     Backer.all.find do |back|
-      if back.name == self.backers[0]
+      if back.name == self.backers[0].name
       binding.pry
     end
   end
