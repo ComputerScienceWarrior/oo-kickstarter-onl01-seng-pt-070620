@@ -12,7 +12,7 @@ class Project
   
   def add_backer(backer)
     @backers << backer
-    # binding.pry
+    Backer.all.find {|back| back}
   end
   
   def self.all 
