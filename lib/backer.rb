@@ -16,7 +16,6 @@ class Backer
     Project.all.find do |proj|
       if proj.title == self.backed_projects[0].title
         proj.backers << self
-        binding.pry
       end
     end
   end
